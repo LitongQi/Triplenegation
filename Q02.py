@@ -1,13 +1,24 @@
-def saySentence(a, b, c, d, e, f, g):
-    var7 == a + d + b + d + c + e + d + f + d + str(g) + e
-    return var7
+def print_primes():
 
-var1 = 'Happy'
-var2 = 'New'
-var3 = 'Year'
-var4 = ' '
-var5 = '!'
-var6 = 'It\'s'
-var7 = 2022
+    i = 2
+    j = 2
+    isComposite = False
+    result = ''
 
-print(saySentence(var1, var2, var3, var4, var5, var6, var7))
+    while i <= 20:
+        while j < i:
+            if i % j == 0:
+                isComposite = True
+                break
+            j = j + 1
+
+        if not isComposite:
+            result = result + str(i) + ' '
+
+        isComposite = False
+        j = 2
+        i = i + 1
+
+    print(result)
+    
+print_primes()
