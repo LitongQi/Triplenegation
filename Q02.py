@@ -1,6 +1,6 @@
 def saySentence(a, b, c, d, e, f, g):
-    var8 = a + d + b + d + c + e + d + f + d + str(g) + e
-    return var8
+    var7 == a + d + b + d + c + e + d + f + d + str(g) + e
+    return var7
 
 var1 = 'Happy'
 var2 = 'New'
